@@ -1,13 +1,21 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
-function Button(props: any ) {
-    
+interface ButtonProps {
+    path: string;
+    name: string;
+}
+
+const Button: React.FC<ButtonProps> = ({ path, name }) => {
+    const navigate = useNavigate();
 
     return (
         <button
-            className='bg-black/50 w-20 h-6 text-white text-center cursor-pointer rounded-full'
-        >{props.name}</button>
-    )
-}
+            className='bg-black/50 w-screen h-6 text-white text-center cursor-pointer rounded-full hover:bg-black/100 sm:w-24'
+            onClick={() => navigate(path)}
+        >
+            {name}
+        </button>
+    );
+};
 
-export default Button
+export default Button;

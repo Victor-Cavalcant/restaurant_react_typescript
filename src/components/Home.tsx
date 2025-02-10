@@ -1,21 +1,21 @@
 import Button from "../components/Button";
-import About from "/Users/victorcavalcanti/Desktop/projetos/type/src/components/About.tsx";
+
 function Home() {
     return (
         <>
-            <div className="bg-[url('/Users/victorcavalcanti/Desktop/projetos/type/src/images/spices.jpg')] bg-cover h-screen flex justify-center"  >
+            <div className="bg-[url('/Users/victorcavalcanti/Desktop/projetos/type/public/images/spices.jpg')] bg-cover h-screen flex justify-center"  >
 
-                <div className='flex flex-col'>
-                    <div className='flex gap-30 p-6'>
-                        <Button name='Home' />
-                        <Button path="/about" element={<About />} name='Menu' />
-                        <Button name='About' />
+                <div className='flex flex-col items-center sm:items-start text-center sm:text-left'>
+                    <div className='flex flex-col sm:flex-row gap-4 sm:gap-30 p-6'>
+                        <Button path="/"  name='Home' />
+                        <Button path="/menu" name='Menu' />
+                        <Button path="/about"  name='About' />
                     </div>
                     <p
-                        className='bg-black/50 mt-12 mx-auto w-auto text-white text-center text-5xl font-bold rounded-full'
+                        className='bg-black/50 mt-6 sm:mt-12 px-6 py-2 w-auto text-white text-3xl sm:text-5xl font-bold rounded-full mr-auto ml-auto'
                     >Aroma Restaurant</p>
                     <p
-                        className='bg-black/50 mt-100 w-75 ml-auto mr-auto text-white text-center text-1xl font-bold rounded-full'
+                        className='bg-black/50 mt-[40vh] px-4 py-2 w-full max-w-lg text-white text-center sm:text-xl font-bold rounded-full mr-auto ml-auto'
                     >An exquisite culinary experience</p>
                 </div>
             </div>
