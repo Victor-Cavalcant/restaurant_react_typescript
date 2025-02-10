@@ -12,7 +12,7 @@ function About() {
 
 
                     <div className="">
-                        <div className="w-full rounded-4xl h-60 shadow-lg bg-[url('/images/cheff.jpg')] bg-contain bg-center bg-no-repeat rounded-4x sm:w-[36vw] sm:mx-auto mb-4 sm:h-100 sm:rounded-4xl" ></div>
+                        <div className="w-[95vw] h-[29vh] mx-auto rounded-4xl shadow-lg bg-[url('/images/cheff.jpg')] bg-contain bg-center bg-no-repeat rounded-4x sm:mx-auto mb-4 sm:h-[400px] sm:w-[600px]" ></div>
 
                     </div>
                     <div className="flex justify-center items-center  w-full">
